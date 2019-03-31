@@ -5,14 +5,16 @@
   <thead>
     <tr>
       <th>รหัสสินค้า</th>
-      <th>ชื่อสินค้า</th>
-      <th>ราคาสินค้า</th>
+      <th >ชื่อสินค้า</th>
+      <th width="30%">รูปสินค้า </th>
+      <th >ราคาสินค้า</th>
       </tr>
   </thead>
   <tbody>
     <tr *ngFor = "let p of productList">
       <td>{{p.pId}}</td>
       <td>{{p.pName}}</td>
+      <td><img src="{{p.img}}" width="30%" hight="25%"></td>
     <td>{{p.pCost}}</td>
     <td>
       <button 
